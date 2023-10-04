@@ -1,0 +1,1 @@
+import"./burgerData-cd6c86ad.js";import{S as e,P as a,A as i}from"./swiper-90c0437d.js";new e(".swiper",{modules:[a,i],grabCursor:!0,spaceBetween:40,autoplay:{delay:3e3,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{375:{slidesPerView:1},768:{slidesPerView:4}}});
