@@ -1,0 +1,144 @@
+.hillel {
+	background: #1C4280;
+}
+
+.wanna-biz {
+	background: #143646;
+}
+
+.tapgerine {
+	background: linear-gradient(0deg, #F48B30 0%, #F48B30 100%), #F48B30;
+}
+
+.look {
+	background: #9E4DC3;
+}
+
+.orangear {
+	background: #FD9339;
+}
+
+.adtelligent {
+	background: #E2E2E4;
+}
+
+.clickky {
+	background: #C71C36;
+}
+
+.eco-leasing {
+	background: #DCF3F9;
+}
+
+.infra-tek {
+	background: #EAEAEA;
+}
+
+.city-park {
+	background: #282240;
+}
+
+.art-print-studio {
+	background: #1D4568;
+}
+
+.ultimate-card {
+	background: #000;
+}
+
+
+.trust {
+
+	&_box {
+		width: 100%;
+		height: 120px;
+	}
+
+	&_none {
+		display: none;
+	}
+
+	&_title {
+		padding-bottom: 30px;
+		text-transform: uppercase;
+	}
+
+	&_container {
+		width: 100%;
+	}
+
+	&_img {
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.trust {
+
+		&_none {
+			display: flex;
+		}
+
+		&_box {
+			max-width: 256px;
+			width: 100%;
+		}
+
+		&_container {
+			max-width: 768px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.trust {
+
+		&_box {
+			max-width: 256px;
+			width: 100%;
+		}
+
+		&_container {
+			max-width: 1024px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1440px) {
+
+	.trust {
+
+		&_box {
+			max-width: 360px;
+		}
+
+		&_container {
+			max-width: 1440px;
+		}
+
+	}
+
+}
+
+@media (min-width: 1920px) {
+
+	.trust {
+		padding-bottom: 60px;
+
+		&_box {
+			max-width: 430px;
+			width: 100%;
+		}
+
+		&_container {
+			max-width: 1920px;
+		}
+	}
+
+}

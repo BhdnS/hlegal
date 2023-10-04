@@ -1,0 +1,120 @@
+@import '../../../styles/components/variable.scss';
+
+.wrapper {
+	position: relative;
+}
+
+.none {
+	display: none;
+}
+
+.block {
+	display: block;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.popup {
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	z-index: 5;
+	background-color: $grey-bg;
+	border-radius: 12px;
+	padding: 30px;
+	align-self: center;
+
+	&_container {
+		gap: 30px;
+	}
+
+	&_form {
+		gap: 30px;
+	}
+
+	&_box-title {
+		gap: 10px;
+		align-items: flex-start;
+	}
+
+	&_title {
+		background: $gradient-red-text;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: normal;
+	}
+
+	&_close {
+		cursor: pointer;
+		transition: .5s;
+
+		&:active path {
+			stroke: $accent;
+			transition: .5s;
+		}
+	}
+
+	&_box-name {
+		gap: 15px;
+	}
+
+	&_input {
+		padding: 15px;
+		border-radius: 8px;
+		background-color: $w;
+	}
+
+	&_textarea {
+		padding: 15px;
+		border-radius: 8px;
+		background-color: $w;
+		max-height: 130px;
+	}
+
+	&_subtitle {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: normal;
+	}
+
+	&_btn {
+		border-radius: 12px;
+		padding: 18px 30px;
+		background: $active-regular;
+		box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+		transition: .5s;
+
+		&:active {
+			background-color: $active-active;
+			transition: .5s;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	
+	.popup {
+
+		&_close {
+
+			&:hover path {
+				stroke: $accent;
+				transition: .5s;
+			}
+
+		}
+
+		&_btn {
+			&:hover {
+				transition: .5s;
+				background-color: $active-hover;
+			}
+		}
+
+	}
+
+}
