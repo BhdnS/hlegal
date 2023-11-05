@@ -1,0 +1,32 @@
+@import './components/variable.scss';
+
+.team_circle-box .swiper-pagination {
+	position: static;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	width: 16px;
+	height: 16px;
+	background-color: $active-regular;
+	opacity: 0.2;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+.swiper-wrapper .swiper-slide-active {
+	display: flex;
+	justify-content: center;
+	height: auto;
+}
+
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.team_container .team_circle-box .swiper-pagination .swiper-pagination-bullet {
+	margin: 0;
+}

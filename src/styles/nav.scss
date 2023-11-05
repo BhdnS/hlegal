@@ -1,0 +1,30 @@
+@import './components/variable.scss';
+
+.nav {
+	display: none;
+}
+
+.nav_link-active {
+	color: $accent;
+}
+
+@media (min-width: 768px) {
+	.nav {
+		display: block;
+		&_list {
+			display: flex;
+			gap: 15px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.nav_link {
+		transition: 0.5s;
+
+		&:hover {
+			transition: 0.5s;
+			color: $accent;
+		}
+	}
+}
